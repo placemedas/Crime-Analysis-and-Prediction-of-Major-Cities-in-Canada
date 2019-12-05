@@ -17,25 +17,25 @@ Note - Codes and Data for below steps are present in folder 'data_loaded_code'
 *  Run the codes to perform ETL for the following cities . Commands are provided as below
         
         # To load Vancouver Data from OpenDataPortal
-        1.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 van_load.py`
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 van_load.py`
         
         # To load Calgary Data from OpenDataPortal
-        2.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py`
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py`
         
         # To load Toronto Data from OpenDataPortal
-        3.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py`  
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py`  
         
         # To load Ottawa Data from OpenDataPortal
-        4.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py`
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py`
         
         # To load Victoria Data from OpenDataPortal
-        5.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py`
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py`
         
         # To load Lethbridge Data from OpenDataPortal
-        6.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py` 
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py` 
         
         # To load Edmonton Data from OpenDataPortal
-        7.  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py`
+        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py`
 
 Note - Codes and Data for below steps are present in folder 'Visualization'
 *  Now that our data is loaded , please run the following code to perform descriptive analytics of the loaded data
