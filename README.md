@@ -19,22 +19,22 @@ Note - Codes and Data for below steps are present in folder 'data_loaded_code'
     To load Vancouver Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 van_load.py`
         
-    # To load Calgary Data from OpenDataPortal
+    To load Calgary Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py`
         
-    # To load Toronto Data from OpenDataPortal
+    To load Toronto Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py`  
         
-    # To load Ottawa Data from OpenDataPortal
+    To load Ottawa Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py`
         
-    # To load Victoria Data from OpenDataPortal
+    To load Victoria Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py`
         
-    # To load Lethbridge Data from OpenDataPortal
+    To load Lethbridge Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py` 
         
-    # To load Edmonton Data from OpenDataPortal
+    To load Edmonton Data from OpenDataPortal
     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py`
 
 Note - Codes and Data for below steps are present in folder 'Visualization'
