@@ -1,6 +1,6 @@
 # Crime Analysis and Prediction of Major Cities in Canada
 
-Our objective is to analyze the crime data of 7 Canadian cities over the past and predict  the  estimated  crime rates  for  the  following year
+Our objective is to analyze the crime data of 7 Canadian cities over the past and predict  the  estimated  crime rates  for  the  following year. 
 
 Below steps are required to make this code work:
 
@@ -8,7 +8,11 @@ Below steps are required to make this code work:
 
 Note - Codes and Data for below steps are present in folder 'data_loaded_code'
 *  Post creating the tables please run the below codes to insert values into configuration tables
-        1.  Run the below code using crime_types.csv
+        # Run the below code using crime_types.csv
+        1. spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crimetypes_loader.py
+        
+        2.Run the commands in cqlsh to perform inserts from xxxxxx 
+            
 
 *  Run the codes to perform ETL for the following cities . Commands are provided as below
         # To load Vancouver Data from OpenDataPortal
@@ -18,28 +22,29 @@ Note - Codes and Data for below steps are present in folder 'data_loaded_code'
         2.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py
         
         # To load Toronto Data from OpenDataPortal
-        3.  
+        3.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py  
         
         # To load Ottawa Data from OpenDataPortal
-        4.  
+        4.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py
         
         # To load Victoria Data from OpenDataPortal
-        5.  
+        5.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py
         
         # To load Lethbridge Data from OpenDataPortal
-        6.  
+        6.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py 
         
         # To load Edmonton Data from OpenDataPortal
-        7.  
+        7.  spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py
 
+Note - Codes and Data for below steps are present in folder 'Visualization'
 *  Now that our data is loaded , please run the following code to perform descriptive analytics of the loaded data
         spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crimetypcnt.py
 
+Note - Codes and Data for below steps are present in folder 'Crime_Rate_Predictor'
 * We also have developed a prediction model that can predict the crime rates based on neighbourhood radius of 1.5km. To train the model, please run the below code
         spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 training_data_loader.py
         spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crime_predictor.py
 
-* To render the descriptive analytics(developed in Tableau) and the prediction model, please run the below code
+Note - Codes and Data for below steps are present in folder 'Web Deployment'
+* To render the descriptive analytics(developed in Tableau) and the prediction model, please run the below code . Ensure all the htmls present in the master directory are present along with the code while running
         spark-submit main.py
-
-* 
