@@ -11,7 +11,7 @@ Note - Codes and Data for below steps are present in folder 'data_loaded_code'
         # Run the below code using crime_types.csv
         1. spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crimetypes_loader.py
         
-        2.Run the commands in cqlsh to perform inserts from xxxxxx 
+        2.Run the commands in cqlsh to perform inserts into crime_code table. Commands are present in crime_code_-_table_inserts.txt
             
 
 *  Run the codes to perform ETL for the following cities . Commands are provided as below
