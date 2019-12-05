@@ -16,30 +16,30 @@ Note - Codes and Data for below steps are present in folder 'data_loaded_code'
 
 *  Run the codes to perform ETL for the following cities . Commands are provided as below
         
-        # To load Vancouver Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 van_load.py`
+    To load Vancouver Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 van_load.py`
         
-        # To load Calgary Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py`
+    # To load Calgary Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 cal_load.py`
         
-        # To load Toronto Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py`  
+    # To load Toronto Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 toronto_load.py`  
         
-        # To load Ottawa Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py`
+    # To load Ottawa Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 ottawa_load.py`
         
-        # To load Victoria Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py`
+    # To load Victoria Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 victoria_load.py`
         
-        # To load Lethbridge Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py` 
+    # To load Lethbridge Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 lethbridge_load.py` 
         
-        # To load Edmonton Data from OpenDataPortal
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py`
+    # To load Edmonton Data from OpenDataPortal
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 edmonton_load.py`
 
 Note - Codes and Data for below steps are present in folder 'Visualization'
 *  Now that our data is loaded , please run the following code to perform descriptive analytics of the loaded data
-        `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crimetypcnt.py`
+    `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crimetypcnt.py`
 
 Note - Codes and Data for below steps are present in folder 'Crime_Rate_Predictor'
 * We also have developed a prediction model that can predict the crime rates based on neighbourhood radius of 1.5km. To train the model, please run the below code
