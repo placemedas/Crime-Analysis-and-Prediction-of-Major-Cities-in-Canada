@@ -42,9 +42,11 @@ Note - Codes and Data for below steps are present in folder 'Visualization'
 
 Note - Codes and Data for below steps are present in folder 'Crime_Rate_Predictor'
 * We also have developed a prediction model that can predict the crime rates based on neighbourhood radius of 1.5km. To train the model, please run the below code
-        *   `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 training_data_loader.py`
-        *  `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crime_predictor.py`
+        
+        1.     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 training_data_loader.py`
+        2.     `spark-submit --packages datastax:spark-cassandra-connector:2.4.0-s_2.11 crime_predictor.py`
 
 Note - Codes and Data for below steps are present in folder 'Web Deployment'
 * To render the descriptive analytics(developed in Tableau) and the prediction model, please run the below code . Ensure all the htmls present in the master directory are present along with the code while running
-        *  `spark-submit main.py`
+
+        1.  `spark-submit main.py`
