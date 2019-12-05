@@ -1,0 +1,48 @@
+#Keyspace creation
+CREATE KEYSPACE crimepred WITH REPLICATION = { 'class' : 'SimpleStrategy', 'replication_factor' : 2};
+
+#Base_table creation
+CREATE TABLE IF NOT EXISTS base_table(
+crime_type text,
+crimesub_type text,
+city text,
+uuid UUID,
+year int,
+month int,
+hour int,
+neighbourhood text,
+lat double,
+long double,
+count int,
+PRIMARY KEY ((city, crime_type), uuid)
+);
+
+#Crime_type table creation
+CREATE TABLE IF NOT EXISTS crime_type(
+sub_type text PRIMARY KEY,
+type text);
+
+
+#Edmonton_latong table
+CREATE TABLE IF NOT EXISTS edmonton_latlong( locality text, lat double, long double, PRIMARY KEY (locality) );
+
+#Crime Type based aggregated table
+cqlsh:crimepred> CREATE TABLE crimes_typ (crime_type text PRIMARY KEY,count int);
+
+#Hour based crime table
+cqlsh:crimepred> CREATE TABLE crimes_hr (hour int,count int,year int,PRIMARY KEY(hour,year));
+
+#Detail aggregation Table
+cqlsh:crimepred> CREATE TABLE crimes_dl (city text,crime_type text,daylight text,count int,PRIMARY KEY(city,crime_type,daylight));
+
+#Season wise aggregated Table
+cqlsh:crimepred> CREATE TABLE crimes_ss (city text,crime_type text,seasons text,avgsum float,PRIMARY KEY(city,crime_type,seasons));
+
+#Year on year aggregations Table
+cqlsh:crimepred> CREATE TABLE crimes_yoy (city text,crime_type text,year int,count int,PRIMARY KEY(city,crime_type,year));
+
+#crime_code table creation 
+CREATE TABLE IF NOT EXISTS crime_code(code int PRIMARY KEY, type_crime text);
+
+#training_table creation
+CREATE TABLE IF NOT EXISTS training_table(uuid UUID PRIMARY KEY, code int, count int, lat double, long double);
