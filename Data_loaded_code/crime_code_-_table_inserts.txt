@@ -1,0 +1,17 @@
+#Inserting into crime_code table
+
+insert into crime_code(code,type_crime) values(1,'Assault')
+insert into crime_code(code,type_crime) values(2,'Drugs')
+insert into crime_code(code,type_crime) values(3,'Robbery')
+insert into crime_code(code,type_crime) values(4,'Theft Over')
+insert into crime_code(code,type_crime) values(5,'Liquor')
+insert into crime_code(code,type_crime) values(6,'Break and Enter')
+insert into crime_code(code,type_crime) values(7,'Vehicle Collision')
+insert into crime_code(code,type_crime) values(8,'Social Disorder')
+insert into crime_code(code,type_crime) values(9,'Missing Person')
+insert into crime_code(code,type_crime) values(10,'Auto Theft')
+insert into crime_code(code,type_crime) values(11,'False Alarm')
+insert into crime_code(code,type_crime) values(12,'Kidnap')
+insert into crime_code(code,type_crime) values(13,'Property Crime')
+insert into crime_code(code,type_crime) values(14,'Petty Crimes')
+
