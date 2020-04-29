@@ -1,5 +1,5 @@
 # Crime Analysis and Prediction of Major Cities in Canada
-#####Created by Vipin Das , Kenny Tony Chakola and Keerthi Ningegowda as part of CMPT 732 project at Simon Fraser University
+##### Created by Vipin Das , Kenny Tony Chakola and Keerthi Ningegowda as part of CMPT 732 project at Simon Fraser University
 
 Our objective is to analyze the crime data of 7 Canadian cities over the past and predict  the  estimated  crime rates  for  the  following year. 
 
